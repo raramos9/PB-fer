@@ -7,5 +7,3 @@
 # * Kyle Long
 # * Anupriya Islam
 #
-#
-#
