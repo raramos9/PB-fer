@@ -6,4 +6,4 @@
 # Participants 
 # * Kyle Long
 # * Anupriya Islam
-#
+# * Yujing Wang
