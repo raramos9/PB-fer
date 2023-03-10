@@ -6,7 +6,7 @@
 # * Andre Ramos
 # 
 # Participants 
-#  Kyle
+#  Kyle L
 #
 #
 #
