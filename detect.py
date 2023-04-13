@@ -26,3 +26,7 @@ files = {
     'TF_RECORD_SCRIPT': os.path.join(paths['SCRIPTS_PATH'], TF_RECORD_SCRIPT_NAME), 
     'LABELMAP': os.path.join(paths['ANNOTATION_PATH'], LABEL_MAP_NAME)
 }
+
+for path in paths.values():
+    if not os.path.exists(path):
+        os.makedirs(path)
