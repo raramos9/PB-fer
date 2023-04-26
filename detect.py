@@ -7,9 +7,9 @@ PRETRAINED_MODEL_URL = 'http://download.tensorflow.org/models/object_detection/t
 TF_RECORD_SCRIPT_NAME = 'generate_tfrecord.py'
 LABEL_MAP_NAME = 'label_map.pbtxt'
 
-if os.name == 'nt':
+if os.name == 'nt': #for model config
     wget.download(PRETRAINED_MODEL_URL)
-
+    
 paths = {
     'WORKSPACE_PATH': os.path.join('Tensorflow', 'workspace'),
     'SCRIPTS_PATH': os.path.join('Tensorflow','scripts'),
