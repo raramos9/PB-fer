@@ -1,0 +1,28 @@
+item { 
+	name:'anger'
+	id:1
+}
+item { 
+	name:'disgust'
+	id:2
+}
+item { 
+	name:'fear'
+	id:3
+}
+item { 
+	name:'happy'
+	id:4
+}
+item { 
+	name:'neutral'
+	id:5
+}
+item { 
+	name:'sad'
+	id:6
+}
+item { 
+	name:'surprised'
+	id:7
+}

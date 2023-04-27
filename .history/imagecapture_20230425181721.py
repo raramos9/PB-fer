@@ -53,6 +53,3 @@ cap.release()
 cv2.destroyAllWindows()
 
 # TODO - Labeling Images 
-
-
-
