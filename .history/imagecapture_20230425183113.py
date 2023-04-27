@@ -54,5 +54,15 @@ cv2.destroyAllWindows()
 
 # TODO - Labeling Images 
 
+# TODO - Label Maps
+labels = [{}]
+labels = [{'name' : 'anger', 'id':1}, {'name' : 'disgust', 'id':2}, {'name' : 'fear', 'id':3}, {'name' : 'happy', 'id':4}, 
+          {'name' : 'neutral', 'id':5}, {'name' : 'sad', 'id':6}, {'name' : 'surprised', 'id':7}]
 
+with open(files['LABELMAP'], 'w') as f:
+       for label in labels:
+              f.write('item { \n')
+              f.write('\tname:\' {}\'\n'.format(label['name']))
+              f.write('\tid:{}\n'.format(label['id']))
+              f.write('}\n')
 
