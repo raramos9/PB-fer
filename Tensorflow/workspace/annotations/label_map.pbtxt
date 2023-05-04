@@ -3,26 +3,18 @@ item {
 	id:1
 }
 item { 
-	name:'disgust'
+	name:'fear'
 	id:2
 }
 item { 
-	name:'fear'
+	name:'happy'
 	id:3
 }
 item { 
-	name:'happy'
+	name:'neutral'
 	id:4
 }
 item { 
-	name:'neutral'
-	id:5
-}
-item { 
 	name:'sad'
-	id:6
-}
-item { 
-	name:'surprised'
-	id:7
+	id:5
 }
