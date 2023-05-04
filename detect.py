@@ -11,7 +11,7 @@ import cv2
 import numpy as np
 from matplotlib import pyplot as plt
 
-CUSTOM_MODEL_NAME = 'my_ssd_mobnet' 
+CUSTOM_MODEL_NAME = 'my_ssd_mobnet_tuned' 
 PRETRAINED_MODEL_NAME = 'ssd_mobilenet_v2_fpnlite_320x320_coco17_tpu-8'
 PRETRAINED_MODEL_URL = 'http://download.tensorflow.org/models/object_detection/tf2/20200711/ssd_mobilenet_v2_fpnlite_320x320_coco17_tpu-8.tar.gz'
 TF_RECORD_SCRIPT_NAME = 'generate_tfrecord.py'
@@ -22,7 +22,7 @@ LABEL_MAP_NAME = 'label_map.pbtxt'
     
 paths = {
     'WORKSPACE_PATH': os.path.join('Tensorflow', 'workspace'),
-    'SCRIPTS_PATH': os.path.join('Tensorflow','scripts'),
+    'SCRIPTS_PATH': os.path.join('Tensorflow','scripts', 'GenerateTFRecord'),
     'APIMODEL_PATH': os.path.join('Tensorflow','models'),
     'ANNOTATION_PATH': os.path.join('Tensorflow', 'workspace','annotations'),
     'IMAGE_PATH': os.path.join('Tensorflow', 'workspace','images'),
@@ -80,7 +80,7 @@ configs = config_util.get_configs_from_pipeline_file(files['PIPELINE_CONFIG'])
 detection_model = model_builder.build(model_config=configs['model'], is_training=False)
 
 ckpt = tf.compat.v2.train.Checkpoint(model=detection_model)
-ckpt.restore(os.path.join(paths['CHECKPOINT_PATH'], 'ckpt-4')).expect_partial()
+ckpt.restore(os.path.join(paths['CHECKPOINT_PATH'], 'ckpt-8')).expect_partial()
 
 @tf.function
 def detect_fn(image):
@@ -121,7 +121,7 @@ while cap.isOpened():
                 category_index,
                 use_normalized_coordinates=True,
                 max_boxes_to_draw=5,
-                min_score_thresh=.22,
+                min_score_thresh=.5,
                 agnostic_mode=False)
 
     cv2.imshow('object detection',  cv2.resize(image_np_with_detections, (800, 600)))
