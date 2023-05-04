@@ -11,8 +11,8 @@ PRETRAINED_MODEL_URL = 'http://download.tensorflow.org/models/object_detection/t
 TF_RECORD_SCRIPT_NAME = 'generate_tfrecord.py'
 LABEL_MAP_NAME = 'label_map.pbtxt'
 
-if os.name == 'nt': #for model config
-    wget.download(PRETRAINED_MODEL_URL)
+# if os.name == 'nt': #for model config
+#    wget.download(PRETRAINED_MODEL_URL)
     
 paths = {
     'WORKSPACE_PATH': os.path.join('Tensorflow', 'workspace'),
@@ -40,8 +40,8 @@ for path in paths.values():
         os.makedirs(path)
 
 # TODO - Label Maps
-labels = [{'name' : 'anger', 'id':1}, {'name' : 'disgust', 'id':2}, {'name' : 'fear', 'id':3}, {'name' : 'happy', 'id':4}, 
-          {'name' : 'neutral', 'id':5}, {'name' : 'sad', 'id':6}, {'name' : 'surprised', 'id':7}]
+labels = [{'name' : 'anger', 'id':1}, {'name' : 'fear', 'id':2}, {'name' : 'happy', 'id':3}, 
+          {'name' : 'neutral', 'id':4}, {'name' : 'sad', 'id':5}]
 
 with open(files['LABELMAP'], 'w') as f:
        for label in labels:
