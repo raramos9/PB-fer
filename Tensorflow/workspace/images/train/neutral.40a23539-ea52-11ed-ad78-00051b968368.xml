@@ -1,0 +1,25 @@
+<annotation>
+	<folder>my-project-name</folder>
+	<filename>neutral.40a23539-ea52-11ed-ad78-00051b968368.jpg</filename>
+	<path>/my-project-name/neutral.40a23539-ea52-11ed-ad78-00051b968368.jpg</path>
+	<source>
+		<database>Unspecified</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>480</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>neutral</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>137</xmin>
+			<ymin>104</ymin>
+			<xmax>327</xmax>
+			<ymax>312</ymax>
+		</bndbox>
+	</object>
+</annotation>

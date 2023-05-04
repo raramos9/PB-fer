@@ -1,0 +1,25 @@
+<annotation>
+	<folder>my-project-name</folder>
+	<filename>sad.29bc4c44-ea52-11ed-9d95-00051b968368 - Copy.jpg</filename>
+	<path>/my-project-name/sad.29bc4c44-ea52-11ed-9d95-00051b968368 - Copy.jpg</path>
+	<source>
+		<database>Unspecified</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>480</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>sad</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>218</xmin>
+			<ymin>80</ymin>
+			<xmax>475</xmax>
+			<ymax>379</ymax>
+		</bndbox>
+	</object>
+</annotation>
