@@ -19,8 +19,8 @@ print(cv2.__version__)
 IMAGE_PATH = os.path.join( 'Tensorflow', 'workspace', 'images', 'collectedimages')
 if not os.path. exists (IMAGE_PATH):
         os.makedirs (IMAGE_PATH)
-labels = ['anger', 'fear', 'happy' , 'sad', 'neutral']
-num_img = 10
+labels = ['anger', 'fear', 'happy' , 'sad']
+num_img = 20
 for label in labels:
     path = os.path. join (IMAGE_PATH, label)
     if not os.path.exists (path): 
@@ -39,7 +39,7 @@ for label in labels:
                 print("Collecting image {} in ".format(img_num))
                 for count in range(3, 0, -1): #countdown timer
                        print(count)
-                       time.sleep(3)
+                       time.sleep(1)
                 
                 ret, frame = cap.read()
                 imgname = os.path.join(IMAGE_PATH, label, label + '.' + '{}.jpg'.format(str(uuid.uuid1()))) #assigning id and making jpg file

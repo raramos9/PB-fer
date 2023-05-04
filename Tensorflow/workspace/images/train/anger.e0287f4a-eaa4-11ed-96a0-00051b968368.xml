@@ -1,0 +1,25 @@
+<annotation>
+	<folder>my-project-name</folder>
+	<filename>anger.e0287f4a-eaa4-11ed-96a0-00051b968368.jpg</filename>
+	<path>/my-project-name/anger.e0287f4a-eaa4-11ed-96a0-00051b968368.jpg</path>
+	<source>
+		<database>Unspecified</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>480</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>anger</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>193</xmin>
+			<ymin>124</ymin>
+			<xmax>384</xmax>
+			<ymax>357</ymax>
+		</bndbox>
+	</object>
+</annotation>

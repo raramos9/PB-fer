@@ -1,0 +1,25 @@
+<annotation>
+	<folder>my-project-name</folder>
+	<filename>happy.d6225e8c-d0de-11ed-a1e4-4233ea894cbd.jpg</filename>
+	<path>/my-project-name/happy.d6225e8c-d0de-11ed-a1e4-4233ea894cbd.jpg</path>
+	<source>
+		<database>Unspecified</database>
+	</source>
+	<size>
+		<width>1280</width>
+		<height>720</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>happy</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>467</xmin>
+			<ymin>209</ymin>
+			<xmax>756</xmax>
+			<ymax>588</ymax>
+		</bndbox>
+	</object>
+</annotation>

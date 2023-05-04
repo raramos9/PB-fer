@@ -1,0 +1,25 @@
+<annotation>
+	<folder>my-project-name</folder>
+	<filename>fear.a98b6c8c-d0df-11ed-99d6-4233ea894cbd.jpg</filename>
+	<path>/my-project-name/fear.a98b6c8c-d0df-11ed-99d6-4233ea894cbd.jpg</path>
+	<source>
+		<database>Unspecified</database>
+	</source>
+	<size>
+		<width>1280</width>
+		<height>720</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>fear</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>428</xmin>
+			<ymin>169</ymin>
+			<xmax>741</xmax>
+			<ymax>629</ymax>
+		</bndbox>
+	</object>
+</annotation>

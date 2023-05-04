@@ -1,0 +1,25 @@
+<annotation>
+	<folder>my-project-name</folder>
+	<filename>sad.15beb4c0-eaa6-11ed-b06a-00051b968368.jpg</filename>
+	<path>/my-project-name/sad.15beb4c0-eaa6-11ed-b06a-00051b968368.jpg</path>
+	<source>
+		<database>Unspecified</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>480</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>sad</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>158</xmin>
+			<ymin>113</ymin>
+			<xmax>421</xmax>
+			<ymax>458</ymax>
+		</bndbox>
+	</object>
+</annotation>
